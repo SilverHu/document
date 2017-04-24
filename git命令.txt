@@ -1,79 +1,80 @@
 
---------------------------------------------ÊµÓÃÖ¸Áî------------------------------------------------
-Éú³Éssh rsa
-	ssh-keygen -t rsa -C "ÓÊÏä"
+--------------------------------------------å®ç”¨æŒ‡ä»¤------------------------------------------------
+ç”Ÿæˆssh rsa
+	ssh-keygen -t rsa -C "é‚®ç®±"
 	
-ÅäÖÃ¶à¸örsa
-	ĞèÒªÔÚÄ¬ÈÏµÄ.sshÎÄ¼ş¼ĞÏÂ´´½¨configÎÄ¼ş£¬Ìí¼Ó
+é…ç½®å¤šä¸ªrsa
+	éœ€è¦åœ¨é»˜è®¤çš„.sshæ–‡ä»¶å¤¹ä¸‹åˆ›å»ºconfigæ–‡ä»¶ï¼Œæ·»åŠ 
 	Host github.com
     HostName        github.com
     User            SilverHu
     IdentityFile    /d/git/id_rsa_SilverHu
 	
-	½«.publicµÄÄÚÈİ¸´ÖÆµ½gitµÄssh keyÖĞ
+	å°†.publicçš„å†…å®¹å¤åˆ¶åˆ°gitçš„ssh keyä¸­
 	
-ÑéÖ¤sshÊÇ·ñÅäÖÃ³É¹¦
+éªŒè¯sshæ˜¯å¦é…ç½®æˆåŠŸ
 	ssh -T git@github.com
-	³É¹¦½á¹û£ºHi SilverHu! You've successfully authenticated, but GitHub does not provide shell access.
+	æˆåŠŸç»“æœï¼šHi SilverHu! You've successfully authenticated, but GitHub does not provide shell access.
 
-Ìí¼ÓÏîÄ¿µ½git
+æ·»åŠ é¡¹ç›®åˆ°git
+	git init
 	git remote add origin git@github.com:yourName/yourRepo.git
 	
 	
-²é¿´·ÖÖ§
+æŸ¥çœ‹åˆ†æ”¯
 	git branch -a
 	
-Ç¿ÖÆ¼ì³ö/ÇĞ»»·ÖÖ§»ò·ÖÖ§Ö¸¶¨ÎÄ¼ş
+å¼ºåˆ¶æ£€å‡º/åˆ‡æ¢åˆ†æ”¯æˆ–åˆ†æ”¯æŒ‡å®šæ–‡ä»¶
 	git checkout <branch> [file] [-f]
 
-ĞÂÔöÎÄ¼ş¼ÓÈëgit°æ±¾¿âÖĞ
-	git add ÎÄ¼şÃû/-A
+æ–°å¢æ–‡ä»¶åŠ å…¥gitç‰ˆæœ¬åº“ä¸­
+	git add æ–‡ä»¶å/-A
 
-É¾³ıgit°æ±¾¿âÖĞÎÄ¼ş
-	git rm ÎÄ¼şÃû
-	git rm -r ÎÄ¼ş¼ĞÃû
+åˆ é™¤gitç‰ˆæœ¬åº“ä¸­æ–‡ä»¶
+	git rm æ–‡ä»¶å
+	git rm -r æ–‡ä»¶å¤¹å
 
-Ôİ´æ²¢Ìá½»£¬Ö»»áÌá½»ÒÑ¾­ÔÚgit²Ö¿âµÄÄÚÈİ
-	git commit -a -m "Ìá½»µÄÃèÊöĞÅÏ¢"
+æš‚å­˜å¹¶æäº¤ï¼Œåªä¼šæäº¤å·²ç»åœ¨gitä»“åº“çš„å†…å®¹
+	git commit -a -m "æäº¤çš„æè¿°ä¿¡æ¯"
 
-²é¿´ÒÑºÏ²¢|Î´ºÏ²¢µÄ±¾µØ²Ö¿â·ÖÖ§
+æŸ¥çœ‹å·²åˆå¹¶|æœªåˆå¹¶çš„æœ¬åœ°ä»“åº“åˆ†æ”¯
 	git branch [--merged | --no-merged]
 
-½«ÆäËû·ÖÖ§ºÏ²¢µ½±¾·ÖÖ§
+å°†å…¶ä»–åˆ†æ”¯åˆå¹¶åˆ°æœ¬åˆ†æ”¯
 	git merge <branch name>
 
-ºÏ²¢³åÍ»£¬½â¾ö³åÍ»ºó
-	git add ÎÄ¼şÃû	±ê¼Ç³åÍ»ÒÑ½â¾ö
-	git commit	Ìá½»
+åˆå¹¶å†²çªï¼Œè§£å†³å†²çªå
+	git add æ–‡ä»¶å	æ ‡è®°å†²çªå·²è§£å†³
+	git commit	æäº¤
 	
-É¾³ıÔ¶³Ì·ÖÖ§
+åˆ é™¤è¿œç¨‹åˆ†æ”¯
 	git push origin :branch-name
 	
-ÍÆËÍ±¾µØ²Ö¿â´úÂëµ½Ô¶³Ì²Ö¿â
+æ¨é€æœ¬åœ°ä»“åº“ä»£ç åˆ°è¿œç¨‹ä»“åº“
 	git push [remote_branch] [local_branch]
 
-È¡ÏûÔİ´æ
+å–æ¶ˆæš‚å­˜
 	git reset [file]
 
-»Ö¸´ÎÄ¼ş
+æ¢å¤æ–‡ä»¶
 	git checkout -- [file]
 
-²é¿´±¾µØ²Ö¿â·ÖÖ§
+æŸ¥çœ‹æœ¬åœ°ä»“åº“åˆ†æ”¯
 	git branch
 
-²é¿´±¾µØ²Ö¿â·ÖÖ§×îºóÒ»´ÎÌá½»Çé¿ö
+æŸ¥çœ‹æœ¬åœ°ä»“åº“åˆ†æ”¯æœ€åä¸€æ¬¡æäº¤æƒ…å†µ
 	git branch -v
 
 
-²é¿´Ô¶³Ì²Ö¿âÃû
+æŸ¥çœ‹è¿œç¨‹ä»“åº“å
 	git remote -v
 
-ĞÂ½¨·ÖÖ§KÁ¢¼´ÇĞ“Qµ½ĞÂ·ÖÖ§
+æ–°å»ºåˆ†æ”¯ä¸¦ç«‹å³åˆ‡æ›åˆ°æ–°åˆ†æ”¯
 	git checkout -b <branch_name>
-ĞŞ¸Ä·ÖÖ§Ãû³Æ
+ä¿®æ”¹åˆ†æ”¯åç§°
 	git branch -m <new_name> 
 
-´ÓÔ¶³Ì²Ö¿âÀ­È¡´úÂëµ½±¾µØ²Ö¿â£¬²¢½¨Á¢¸ú×Ù¹ØÏµ
+ä»è¿œç¨‹ä»“åº“æ‹‰å–ä»£ç åˆ°æœ¬åœ°ä»“åº“ï¼Œå¹¶å»ºç«‹è·Ÿè¸ªå…³ç³»
 	git clone http://xxx.git
 	get clone git@xxx.git
 	
