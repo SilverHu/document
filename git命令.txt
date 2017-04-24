@@ -6,9 +6,9 @@
 配置多个rsa
 	需要在默认的.ssh文件夹下创建config文件，添加
 	Host github.com
-    HostName        github.com
-    User            SilverHu
-    IdentityFile    /d/git/id_rsa_SilverHu
+    	HostName        github.com
+    	User            SilverHu
+    	IdentityFile    /d/git/id_rsa_SilverHu
 	
 	将.public的内容复制到git的ssh key中
 	
@@ -19,7 +19,9 @@
 添加项目到git
 	git init
 	git remote add origin git@github.com:yourName/yourRepo.git
-	
+
+设置忽略文件
+	在项目底下配置.gitignore文件，在文件中设置忽略路径
 	
 查看分支
 	git branch -a
