@@ -1,4 +1,5 @@
-
+maven打包：
+	mvn -Dmaven.test.skip=true -Pdev -e clean package
 --------------------------------------------实用指令------------------------------------------------
 生成ssh rsa
 	ssh-keygen -t rsa -C "邮箱"
